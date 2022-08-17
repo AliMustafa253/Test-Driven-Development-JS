@@ -1,0 +1,70 @@
+===========TDD====================
+
+Write tests first, ensures its well tested from the very beginning.
+	
+	Advantages
+		- clarify understanding
+		- improves communication = better than commenting (get old)
+		- improves structure and code, loosely coupled code.
+		- make changes without breaking 
+		
+	Disadvantages
+		- Write tests now or track later
+		- Hard to convince management, save time now or spend more time later
+		- bad tests possible
+		
+	TDD Steps
+		- Failing test, 
+		- enough to run, stop functionality, untested code = bugs potentional
+		- make good
+		
+	RITE
+		- Readable, What behaviour and expected and why
+		- isolated,
+		- Thorough, Edge Case
+		- Explicit, clear and obv
+	
+	3 types of tests
+	
+		Unit Test
+			- Individual Pieces
+				Cover Representative range. Check if breaking changes possible
+				
+				Discipline not to make implementations until fail achieved again
+			
+		Integration Test
+			- Individual pieces work together
+				higher level conceptually
+				longer
+			- Two Categories:
+					- Single-Service Integration Test
+						Test single piece of application
+						
+					- Boundary Integration Tests
+						Test communication b/w diff pieces
+						Dont use test doubles, interaction works as expected
+		
+		End to End Test
+			- Working as expected from user.
+			
+	Test Doubles
+		e.g fake mongoDB or our own front and back end, in order to make it faster
+		
+		when not to use
+			- Don't do it to avoid setup
+			- try refactoring 
+			- don't mock what you dont own.  API can change
+			- Never use test doubles in unit tests. Tightly Coupled
+			
+			
+	Other Notes:-
+			
+	- Database wrapper returns actual code and use double for others
+	- mocha allows some files to run first
+	- chai-exclude to avoid extensions like _id on mongodv
+	- supertest ofr test sinon for test double 
+	- nyc to check which code covered
+		
+		
+	
+	
