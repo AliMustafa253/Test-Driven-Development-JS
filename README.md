@@ -20,4 +20,4 @@ npm i
 * Babel
 
 ## Additional Notes
-Personalized notes covering the basics have been included as well in a text file.
+Personalized notes covering the basics have been included as well in a text file (TDD.txt).
